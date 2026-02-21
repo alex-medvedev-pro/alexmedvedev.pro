@@ -1,0 +1,22 @@
+---
+import LinkButton from "./LinkButton.astro";
+import IconCalendar from "@/assets/icons/IconCalendar.svg";
+---
+
+<section id="cta" class="my-10 border-t border-border bg-accent/5 px-6 py-12 text-center rounded-[2rem] mt-16 mb-8">
+    <h2 class="mb-4 text-3xl font-bold tracking-tight">Level up your infrastructure!</h2>
+    <p class="mx-auto mb-8 max-w-2xl text-lg leading-relaxed opacity-90">Ensure your{" "}
+      <span class="font-semibold text-accent underline decoration-wavy underline-offset-4">Cloud Native</span>{" "}
+      infra is rock-solid and your{" "}
+      <span class="font-semibold text-accent underline decoration-wavy underline-offset-4">Kubernetes</span>{" "}
+      clusters are production-ready.
+    </p>
+    <LinkButton
+            href="https://calendar.app.google/z24Xp6WWH1Rzwrk78"
+            class="group inline-flex items-center gap-3 rounded-2xl bg-accent px-8 py-4 text-xl font-bold text-background shadow-lg transition-all hover:-translate-y-1 hover:bg-accent/90 hover:text-background! active:translate-y-0"
+            target="_blank"
+    >
+        <IconCalendar class="h-8 w-8 transition-transform group-hover:rotate-12"/>
+        Access expert advice
+    </LinkButton>
+</section>

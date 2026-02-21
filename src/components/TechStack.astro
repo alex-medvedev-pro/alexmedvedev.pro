@@ -1,0 +1,82 @@
+---
+import IconKubernetes from "@/assets/icons/IconKubernetes.svg";
+import IconTerraform from "@/assets/icons/IconTerraform.svg";
+import IconGit from "@/assets/icons/IconGit.svg";
+import IconArgoCD from "@/assets/icons/IconArgoCD.svg";
+import IconGo from "@/assets/icons/IconGo.svg";
+import IconDocker from "@/assets/icons/IconDocker.svg";
+import IconGitHubActions from "@/assets/icons/IconGitHubActions.svg";
+import IconCNCF from "@/assets/icons/IconCNCF.svg";
+import IconVault from "@/assets/icons/IconVault.svg";
+import IconSidero from "@/assets/icons/IconSidero.svg";
+import IconHelm from "@/assets/icons/IconHelm.svg";
+import IconOpenStack from "@/assets/icons/IconOpenStack.svg";
+import IconAnsible from "@/assets/icons/IconAnsible.svg";
+import IconBrandAws from "@/assets/icons/IconBrandAws.svg";
+import IconBrandGcp from "@/assets/icons/IconBrandGcp.svg";
+import IconBrandAzure from "@/assets/icons/IconBrandAzure.svg";
+import IconPrometheus from "@/assets/icons/IconPrometheus.svg";
+import IconGrafana from "@/assets/icons/IconGrafana.svg";
+import IconOpenTelemetry from "@/assets/icons/IconOpenTelemetry.svg";
+import IconCilium from "@/assets/icons/IconCilium.svg";
+import IconCrossplane from "@/assets/icons/IconCrossplane.svg";
+
+const techStack = [
+    {name: "Kubernetes", Icon: IconKubernetes},
+    {name: "GCP", Icon: IconBrandGcp},
+    {name: "AWS", Icon: IconBrandAws},
+    {name: "Azure", Icon: IconBrandAzure},
+    {name: "Cloud Native", Icon: IconCNCF},
+    {name: "Terraform", Icon: IconTerraform},
+    {name: "ArgoCD", Icon: IconArgoCD},
+    {name: "Crossplane", Icon: IconCrossplane},
+    {name: "Talos", Icon: IconSidero},
+    {name: "Helm", Icon: IconHelm},
+    {name: "Cilium", Icon: IconCilium},
+    {name: "CI/CD", Icon: IconGitHubActions},
+    {name: "Ansible", Icon: IconAnsible},
+    {name: "Docker", Icon: IconDocker},
+    {name: "OpenStack", Icon: IconOpenStack},
+    {name: "Prometheus", Icon: IconPrometheus},
+    {name: "Grafana", Icon: IconGrafana},
+    {name: "Go", Icon: IconGo},
+    {name: "Git", Icon: IconGit},
+    {name: "Vault", Icon: IconVault},
+    {name: "OpenTelemetry", Icon: IconOpenTelemetry},
+];
+---
+
+<section id="tech-stack" class="pt-12 pb-6 border-b border-border">
+    <h2 class="text-2xl font-semibold tracking-wide mb-4">Tech Stack</h2>
+
+    <p class="mb-6 text-lg leading-relaxed">
+        I have extensive experience with a wide range of technologies, tools, and programming languages.
+        However, in recent years, I have focused primarily on mastering the modern cloud-native ecosystem including but
+        not limited to:
+    </p>
+
+    <div class="flex flex-wrap justify-center gap-6 sm:gap-8 mb-8">
+        {
+            techStack.map(tech => (
+                    <div class="flex flex-col items-center gap-2 group">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 p-2 rounded-xl bg-muted/50 flex items-center justify-center transition-transform group-hover:scale-110 group-hover:bg-accent/10">
+                            <tech.Icon
+                                    class="w-full h-full object-contain"
+                                    aria-label={tech.name}
+                            />
+                        </div>
+                        <span class="text-xs sm:text-sm font-medium text-muted-foreground group-hover:text-accent transition-colors">
+            {tech.name}
+          </span>
+                    </div>
+            ))
+        }
+    </div>
+
+    <p class="text-lg leading-relaxed text-muted-foreground">
+        Ultimately, the most critical skill for an engineer is the ability to master new technologies efficiently.
+        My strength lies in the synergy between fundamental Computer Science knowledge and years of hands-on experience.
+        This enables me to deliver robust, scalable & high-performance solutions regardless of the specific tools or
+        stack.
+    </p>
+</section>
